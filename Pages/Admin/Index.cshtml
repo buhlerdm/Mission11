@@ -1,0 +1,29 @@
+﻿@page "/admin"
+
+@using Microsoft.AspNetCore.Authorization
+@attribute [Authorize]
+
+@model OnlineBookstoreProject.Pages.Admin.IndexModel
+@{
+}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bookstore Project</title>
+    <link href="~/lib/css/bootstrap.css" rel="stylesheet" />
+    <base href="/" />
+</head>
+
+<body>
+
+    <component type="typeof(OnlineBookstoreProject.Pages.Admin.Routed)" render-mode="Server" />
+    <script src="/_framework/blazor.server.js"></script>
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,45 @@
+﻿@inherits LayoutComponentBase
+
+@*********************************************************************************************************************************************************@
+@*This is one of the bootstraps we have to do. We have never added a header like this on top of a page with different colors and sizes of text in one section of a page.*@
+<div class="bg-dark py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder text-white">Book Store Admin</h1>
+                    <p class="lead fw-normal text-muted mb-4">In this section you are able to Create, Read, Update, and Delete books from the database.</p>
+                    <p class="lead fw-normal text-muted mb-4">You may also be able to see purchases and update their status.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*********************************************************************************************************************************************************@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-sm btn-primary" href="/account/logout">Log Out</a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+
+    <div class="row p-2">
+
+        <div class="col-3">
+
+            <div class="d-grid gap-2">
+                <NavLink class="btn btn-outline-primary" href="/admin/books" ActiveClass="btn-primary text-white" Match="NavLinkMatch.Prefix">Books</NavLink>
+                <NavLink class="btn btn-outline-primary" href="/admin/purchases" ActiveClass="btn-primary text-white" Match="NavLinkMatch.Prefix">Purchases</NavLink>
+            </div>
+        </div>
+
+        <div class="col">
+            @Body
+        </div>
+
+
+    </div>
+
+</div>
