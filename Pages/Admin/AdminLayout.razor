@@ -1,5 +1,26 @@
 ﻿@inherits LayoutComponentBase
 
+
+@*************************************************************************************************
+Mission 11 bootstrap change. I made a navbar dark and made it blend with the header change I made for mission 10 with the same color and style.*@
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav">
+
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a class="btn btn-sm btn-primary" href="/account/logout">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+@******************************************************************************************************@
+
 @*********************************************************************************************************************************************************@
 @*This is one of the bootstraps we have to do. We have never added a header like this on top of a page with different colors and sizes of text in one section of a page.*@
 <div class="bg-dark py-5">
@@ -16,14 +37,6 @@
     </div>
 </div>
 @*********************************************************************************************************************************************************@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-            <a class="btn btn-sm btn-primary" href="/account/logout">Log Out</a>
-        </div>
-    </div>
-</div>
-<div class="container-fluid">
 
     <div class="row p-2">
 
@@ -41,5 +54,3 @@
 
 
     </div>
-
-</div>
