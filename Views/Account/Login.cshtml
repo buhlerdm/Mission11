@@ -11,8 +11,7 @@
         <link href="~/lib/css/bootstrap.css" rel="stylesheet" />
     </head>
 
-@******************************************************************************************************************
-Mission 11 bootstrap change with making the log in form look better. I added place holders and adjusted the positioning of the form.*@
+
 
     <body>
         <div class="bg-dark text-white p-2">
@@ -20,6 +19,8 @@ Mission 11 bootstrap change with making the log in form look better. I added pla
         </div>
         <div class="text-danger" asp-validation-summary="All"></div>
 
+        @******************************************************************************************************************
+        Mission 11 bootstrap change with making the log in form look better. I added place holders and adjusted the positioning of the form.*@
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-8 col-xl-6">
 
@@ -30,11 +31,11 @@ Mission 11 bootstrap change with making the log in form look better. I added pla
                         <label asp-for="UserName">Enter first name:</label>
                     </div>
 
-                   
+
                     <div class="form-floating mb-3">
                         <input class="form-control" placeholder="Enter Password..." asp-for="Password" type="password">
                         <label asp-for="Password">Enter Password:</label>
-                        
+
                     </div>
 
                     <button class="btn btn-primary" type="submit">Log In</button>
